@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Rutuu ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Great+Vibes&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bg"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+<div id="fx"></div>
+<canvas id="confetti"></canvas>
+
+<div id="music" aria-label="Music player">
+  <button id="musicBtn" aria-label="Play or pause music">♪</button>
+  <div class="eq" id="eq"><i></i><i></i><i></i><i></i></div>
+  <input id="vol" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume">
+</div>
+
+<main id="stage">
+  <!-- 1 Welcome -->
+  <section class="sec active" id="s0"><div class="wrap">
+    <svg class="logo" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 85C20 60 4 44 4 27 4 14 14 5 26 5c10 0 20 6 24 16C54 11 64 5 74 5c12 0 22 9 22 22 0 17-16 33-46 58z"/></svg>
+    <p class="small" id="forLine">A little Gift for</p>
+    <h1 class="script" id="herName"></h1>
+    <h2 id="greeting"></h2>
+    <p class="sub" id="subtitle"></p>
+    <button class="btn pulse" id="enter">Little Surprise For You...</button>
+  </div></section>
+
+  <!-- 2 Birthday -->
+  <section class="sec" id="s1"><div class="wrap">
+    <h2 class="script big" id="bdayTitle"></h2>
+    <p class="sub" id="wishLine">Make a wish, then blow out the candles</p>
+    <div class="cake">
+      <div class="candles" id="candles"></div>
+      <div class="tier t2"></div><div class="tier t1"></div><div class="plate"></div>
+    </div>
+    <button class="btn" id="blow">Blow the candles 🕯️</button>
+    <p class="msg" id="cakeMsg"></p>
+  </div></section>
+
+  <!-- 3 Memories -->
+  <section class="sec" id="s2"><div class="wrap">
+    <h2 class="script big">Some Memories</h2>
+    <p class="sub">Tap a photo to see it bigger</p>
+    <div class="gallery" id="gallery"></div>
+  </div></section>
+
+  <!-- 4 Letter -->
+  <section class="sec" id="s3"><div class="wrap">
+    <h2 class="script big">A Letter For You</h2>
+    <p class="sub" id="envHint">Tap the envelope to open it</p>
+    <div class="env" id="env">
+      <div class="env-back"></div>
+      <div class="paper" id="paper"><div class="paper-in"><p class="hand" id="letterText"></p></div></div>
+      <div class="env-front"></div>
+      <div class="flap"></div>
+      <div class="seal">♥</div>
+    </div>
+  </div></section>
+
+ 
+
+  <!-- 6 Final -->
+  <section class="sec" id="s5"><div class="wrap">
+    <div class="bigheart" aria-hidden="true">♥</div>
+    <h2 class="script big" id="finalTitle"></h2>
+    <p class="msg show" id="finalMsg"></p>
+    <p class="hand sign" id="sign"></p>
+        <a href="./surprise.html" class="btn" id="celebrate">
+    One more surprise ✨
+</a>
+  </div></section>
+</main>
+
+<nav id="nav" hidden>
+  <button id="prev" aria-label="Previous">‹</button>
+  <div id="dots"></div>
+  <button id="next" aria-label="Next">›</button>
+</nav>
+
+<div id="lb" hidden><figure><img alt=""><figcaption></figcaption></figure></div>
+
+<audio id="audio" src="assets/audio/background.mp3" loop preload="auto"></audio>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
